@@ -1,5 +1,5 @@
 {
-    "name": "dswa5-12-ac-pt3009351",
+    "name": "dswa5-10-ac-pt3009351",
     "version": "1.0.0",
     "description": "Organizando serviços",
     "main": "index.js",
@@ -16,6 +16,7 @@
         "method-override": "^2.3.10",
         "mongodb": "^4.5.0",
         "mongoose": "^6.3.2",
+        "nodejs": "^0.0.0",
         "uglify-js": "^3.8.0"
     },
     "engines": {
