@@ -1,6 +1,5 @@
 angular.module('ifsp').controller('CursoController',
-    function($scope, $routeParams, $resource) {
-        var Curso = $resource('/cursos/:id');
+    function($scope, $routeParams, Curso) {
         if ($routeParams.cursoId) {
 
             Curso.get({ id: $routeParams.cursoId },
@@ -17,7 +16,6 @@ angular.module('ifsp').controller('CursoController',
 
         } else { $scope.curso = new Curso(); }
 
-
         $scope.salva = function() {
             $scope.curso.$save()
                 .then(function() {
@@ -29,6 +27,4 @@ angular.module('ifsp').controller('CursoController',
                     $scope.mensagem = { texto: 'Não foi possível salvar' };
                 });
         };
-
-
     });
